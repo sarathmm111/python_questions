@@ -25,3 +25,16 @@ def panagram(s):
             return True
     return False
 print(panagram("the quick brown fox jumps over the lazy dog"))
+
+
+
+def freq(s):
+    frequency = {}
+    for i in s:
+        if i in frequency:
+            frequency[i] += 1
+        else:
+            frequency[i] = 1
+    return frequency
+
+print(freq("hello"))
