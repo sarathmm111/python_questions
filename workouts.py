@@ -16,3 +16,12 @@ def palindrome(s):
     return s == s[::-1]
 
 print(palindrome("malayalam"))
+
+
+def panagram(s):
+    alphabets='abcdefghijklmnopqrstuvwxyz'
+    for i in alphabets:
+        if i in s.lower():
+            return True
+    return False
+print(panagram("the quick brown fox jumps over the lazy dog"))
