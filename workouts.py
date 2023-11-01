@@ -19,12 +19,17 @@ print(palindrome("malayalam"))
 
 
 def panagram(s):
-    alphabets='abcdefghijklmnopqrstuvwxyz'
-    for i in alphabets:
-        if i in s.lower():
-            return True
-    return False
-print(panagram("the quick brown fox jumps over the lazy dog"))
+    alphabets = "abcdefghijklmnopqrstuvwxyz"
+    s = s.lower()
+
+    for letter in alphabets:
+        if letter not in s:
+            return False 
+    return True
+
+input = "the quick brown fox jumps over the lazy dog"
+output = panagram(input)
+print(output)
 
 
 
