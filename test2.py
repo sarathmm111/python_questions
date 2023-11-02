@@ -8,3 +8,6 @@ def test_operand_addition():
     
 def test_operand_sub():
     assert evaluate("42-") == 2
+    
+def test_operand_sub1():
+    assert evaluate("42-") == -3
