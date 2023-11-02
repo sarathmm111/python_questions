@@ -20,3 +20,6 @@ def test_operand_div():
     
 def test_multiple_operations():
     assert evaluate("123+-") == -4
+    
+def test_modulus():
+    assert evaluate("75%") == 2
