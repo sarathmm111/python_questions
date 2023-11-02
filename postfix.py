@@ -7,6 +7,8 @@ def evaluate(exp):
             operand_1 = stack.pop()
             if i == "+":
                 stack.append(operand_1 + operand_2)
+            elif i == "-":
+                stack.append(num_1 - num_2)
         else:
             stack.append(int(i))
     return stack.pop()
