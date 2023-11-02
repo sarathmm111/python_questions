@@ -17,3 +17,6 @@ def test_operand_multi():
   
 def test_operand_div():
     assert evaluate("42/") == 2
+    
+def test_multiple_operations():
+    assert evaluate("123+-") == -5
