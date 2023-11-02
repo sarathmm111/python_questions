@@ -23,3 +23,6 @@ def test_multiple_operations():
     
 def test_modulus():
     assert evaluate("75%") == 2
+
+def test_exponent():
+    assert evaluate("23^") == 8
