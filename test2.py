@@ -14,3 +14,6 @@ def test_operand_sub1():
     
 def test_operand_multi():
     assert evaluate("24*") == 8
+  
+def test_operand_div():
+    assert evaluate("42/") == 2
